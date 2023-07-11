@@ -3,9 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ethersproject/contract": "^6.0.0-beta.1",
+    "@ethersproject/providers": "^5.7.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@truffle/hdwallet-provider": "^2.1.12",
+    "dotenv": "^16.3.1",
+    "ethers": "5.7.2",
     "jspdf": "^2.5.1",
     "netlify": "^13.1.9",
     "qrcode": "^1.5.3",
@@ -39,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }

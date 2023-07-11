@@ -13,6 +13,7 @@
   flex: 1;
   margin: 60px;
   max-width: 400px;
+ 
 }
 
 h1 {
@@ -43,12 +44,11 @@ label{
   text-align: left;
   font-size: small;
   font-family: 'Inter', sans-serif;
-}
-
-label {
   display: block;
   margin-bottom: 5px;
+ 
 }
+
 
 input[type="text"],
 input[type="number"],
@@ -58,6 +58,8 @@ input[type="date"] {
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 3px;
+  /* max-width: 90%; */
+  
   
 }
 
@@ -68,36 +70,22 @@ button {
   background-color: #007bff;
   color: #fff;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
   font-family: 'Nunito Sans', sans-serif;
 }
 button.print
-{background-color: rgb(97, 184, 76);}
+{background-color: rgba(50, 168, 21, 0.801);}
 
 button.print:hover {
-  background-color: #0ac513;
+  background-color: #0cd617;
 }
 
 button:hover {
   background-color: #0056b3;
 }
 
-.success-message {
-  color: rgb(5, 122, 5);
-  margin-top: 35px;
-  margin-bottom: 30px;
-  font-family: 'Heebo', sans-serif;
-  font-size: 15px;
-  
-}
 
-.fail-message {
-  color: red;
-  margin-bottom: 10px;
-  margin-top: 25px;
-  font-family: 'Inter', sans-serif;
-}
 
 @media (max-width: 480px) {
   .cont1, .cont2 {
@@ -127,11 +115,30 @@ button:hover {
     
   }
 }
+
+
 .no-arrow::-webkit-inner-spin-button,
 .no-arrow::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+.success-message {
+  color: rgb(5, 122, 5);
+  margin-top: 35px;
+  margin-bottom: 30px;
+  font-family: 'Heebo', sans-serif;
+  font-size: 15px;
+  
+}
+
+.fail-message {
+  color: red;
+  margin-bottom: 10px;
+  margin-top: 25px;
+  font-family: 'Inter', sans-serif;
+}
+
 #buttons{
   margin-top: 40px;
   margin-bottom: 50px;
@@ -184,6 +191,10 @@ button:hover {
     margin:5px;
     max-width: 40%;
   }}
+
+
+
+ 
 
 #button-metamask:focus {
   box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
