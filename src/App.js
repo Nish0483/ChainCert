@@ -45,6 +45,13 @@ const App = () => {
         const contract = new ethers.Contract(address, ABI.abi, signer);
         setContract(contract);
       }
+
+      const urlParams = new URLSearchParams(window.location.search);//for auto filling from QR code
+      const certNoParam = urlParams.get('certNo');
+      const certHashParam = urlParams.get('certHash');
+      setCertNo(certNoParam || '');// Set the initial values of the input fields
+      setHash(certHashParam || '');
+
     };
 
     initialize();
@@ -185,7 +192,7 @@ const App = () => {
 
   const GeneratePDF = async () => {       // create pdf using given data using JSPDF library
    
-    const dAppLink = `http://localhost:3000/?certNo=${encodeURIComponent(
+    const dAppLink = `https://chaincert.netlify.app/?certNo=${encodeURIComponent(
       number
     )}&certHash=${encodeURIComponent(_certHash)}`;
     const qrCodeDataUrl = await generateQRCodeAsDataURL(dAppLink);

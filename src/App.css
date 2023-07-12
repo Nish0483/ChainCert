@@ -89,10 +89,11 @@ button:hover {
 
 @media (max-width: 480px) {
   .cont1, .cont2 {
-    padding: 20px;
-    margin:10px;
-    max-width: 70%;
-    margin-left: 35px;
+    padding: 18px;
+    margin:8px;
+    max-width: 80%;
+    margin-left: 25px;
+    margin-right: 25px;
     
   }
   h1{font-size: 15px;margin-top:10px;margin-bottom: 20px;}
@@ -190,6 +191,7 @@ button:hover {
     padding: 20px;
     margin:5px;
     max-width: 40%;
+    font-size: 13px;
   }}
 
 
